@@ -2,12 +2,13 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title></title>
+		<title>toto</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 		<meta content="yes" name="apple-mobile-web-app-capable"/>
 		<meta content="black" name="apple-mobile-web-app-status-bar-style"/>
 		<meta content="telephone=no" name="format-detection"/>
 		<link rel="stylesheet" href="css/reset.min.css" />
+		<link rel="stylesheet" href="css/toto.css" />
 		<script type="text/javascript">
 			(function(doc, win) {
 				var docEl = doc.documentElement,
@@ -27,8 +28,62 @@
 			})(document, window);
 		</script>
 		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/toto.js"></script>
 	</head>
 	<body>
-			
+		<div id="loading">
+			<div class="logo">
+				<img src="img/logo.png" />
+			</div>
+			<div class="logoBox">
+				<div class="logoP">
+					<p>0%</p>
+				</div>
+				<div class="hitMe">
+					<button disabled="disabled">hit me</button>
+				</div>
+			</div>
+		</div>	
+		<div id="firstSence">
+			<video 
+				id="first"
+				src="hotata.mp4"
+			    preload="auto" 
+			    webkit-playsinline="true" 
+			    playsinline="true" 
+			    x-webkit-airplay="allow" 
+			    x5-video-player-type="h5" 
+			    x5-video-player-fullscreen="true" 
+			    x5-video-orientation="portraint"
+			    style="object-fit:fill">
+			></video>
+			<div class="smart">
+				<button>开启smart trip</button>
+			</div>
+		</div>
+		<div id="secondSence">
+			<video 
+				id="second"
+				src="toto.mp4"
+			    preload="auto" 
+			    webkit-playsinline="true" 
+			    playsinline="true" 
+			    x-webkit-airplay="allow" 
+			    x5-video-player-type="h5" 
+			    x5-video-player-fullscreen="true" 
+			    x5-video-orientation="landscape"
+			    style="object-fit:fill">
+			></video>
+			<div class="secondBoxOut">
+				<div class="secondBox">
+					<div class="smartLogo">
+						<img src="img/smartLogo.png" />	
+					</div>
+					<div class="smartBtn">
+						<button>免费入住高端酒店</button>	
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
